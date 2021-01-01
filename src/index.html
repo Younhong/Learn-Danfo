@@ -36,14 +36,14 @@
             var d2 = new dfd.DataFrame({
                 '온도':[20,21,22,23],
                 '요일':['월', '월', '월', '월'],
-                '판매량':[40,42,44,46]
+                '판매량':[40,42,44,49]
             });
             d2.print();
             
             // 파일로부터 데이터프래임 생성 https://danfo.jsdata.org/api-reference/input-output
             
-            dfd.read_csv('https://gist.githubusercontent.com/egoing/43799f48b55b5eb2a8b37652eab72318/raw/3a207dd85d0b74968426e65ae2cee4cb1d4aef4f/lemon.csv')
-                .then(function(data){//              
+            dfd.read_csv('https://raw.githubusercontent.com/Younhong/Learn-Danfo/master/lemon.csv')
+                .then(function(data){              
                     data.print();
                 });
                
